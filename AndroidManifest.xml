@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.deityaphrodite"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.CAMERA">
+	</uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.deityaphrodite.DeityAphroditeSplash"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.deityaphrodite.DeityAphroditeMainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.deityaphrodite.DeityAphroditeLearn"
+            android:label="@string/option1" 
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.deityaphrodite.DeityAphroditePlay"
+            android:label="@string/option2"
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeMainActivity">
+        </activity>
+	
+	<activity
+            android:name="com.example.deityaphrodite.DeityAphroditeFavs"
+            android:label="@string/option3" 
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+            </intent-filter>
+    </activity>
+    
+    <activity
+            android:name="com.example.deityaphrodite.DeityAphroditeLearnAgencies"
+            android:label="@string/Agencies" 
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeLearn">
+    </activity>
+    
+    <activity
+            android:name="com.example.deityaphrodite.DeityAphroditeISS"
+            android:label="@string/ISS" 
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeLearn">
+    </activity>
+    
+    <activity
+            android:name="com.example.deityaphrodite.DeityAphroditePlanets"
+            android:label="@string/Planets" 
+            android:parentActivityName="com.example.deityaphrodite.DeityAphroditeLearn">
+    </activity>
+    
+    </application>
+
+</manifest>
