@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stars"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DeityAphroditeMainActivity" >
+
+    <TextView
+        android:id="@+id/initial_Text"
+        style="@style/MainFont"
+        android:layout_marginBottom="15dp"
+        android:text="@string/first_sentence" />
+
+    <Button
+        android:id="@+id/buttonStart1"
+        style="@style/ButtonMainMenu"
+        android:layout_above="@+id/buttonStart2"
+        android:layout_alignLeft="@+id/initial_Text"
+        android:layout_alignRight="@+id/citation_author"
+        android:layout_marginBottom="15dp"
+        android:background="@color/LightYellow"
+        android:onClick="sendMessageLearn"
+        android:text="@string/text_button_start1" />
+
+    <Button
+        android:id="@+id/buttonStart2"
+        style="@style/ButtonMainMenu"
+        android:layout_above="@+id/buttonStart3"
+        android:layout_alignLeft="@+id/buttonStart1"
+        android:layout_alignRight="@+id/buttonStart1"
+        android:layout_marginBottom="14dp"
+        android:background="@color/LightBlue"
+        android:onClick="sendMessagePlay"
+        android:text="@string/text_button_start2" />
+
+    <Button
+        android:id="@+id/buttonStart3"
+        style="@style/ButtonMainMenu"
+        android:layout_alignLeft="@+id/buttonStart2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonStart2"
+        android:layout_marginBottom="25dp"
+        android:background="@color/LightGreen"
+        android:onClick="sendMessageFavs"
+        android:text="@string/text_button_start3" />
+
+    <TextView
+        android:id="@+id/citation_author"
+        style="@style/CitationAuthorFont"
+        android:layout_alignLeft="@+id/citation_text"
+        android:layout_below="@+id/citation_text"
+        android:layout_marginTop="16dp"
+        android:text="@string/citation_author" />
+
+    <TextView
+        android:id="@+id/citation_text"
+        style="@style/CitationTextFont"
+        android:layout_alignLeft="@+id/initial_Text"
+        android:layout_below="@+id/initial_Text"
+        android:layout_marginTop="17dp"
+        android:text="@string/citation_text" />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/citation_author"
+        android:layout_alignTop="@+id/citation_author"
+        android:layout_marginLeft="22dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitXY" />
+
+    <QuickContactBadge
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/citation_author"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/result"
+        android:adjustViewBounds="false"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+</RelativeLayout>

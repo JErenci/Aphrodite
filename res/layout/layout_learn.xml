@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@string/action_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@string/action_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/space"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:id="@string/action_search" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/space" 
+            android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/space_text" 
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_horizontal" 
+                android:layout_marginBottom="@dimen/activity_horizontal_margin" 
+                android:layout_marginLeft="@dimen/activity_left_margin" 
+                android:layout_marginRight="@dimen/activity_right_margin" 
+                android:layout_marginTop="@dimen/activity_vertical_separation" 
+                android:gravity="center" 
+                android:text="@string/search_text" 
+                android:textColor="#C0C0C0" 
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonSubMenu"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_below="@+id/button1"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_button_3" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonSubMenu"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_alignRight="@+id/space_text"
+                android:layout_below="@+id/space_text"
+                android:onClick="showAgencies"
+                android:text="@string/text_button_4" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonSubMenu"
+                android:layout_alignLeft="@+id/space_text"
+                android:layout_below="@+id/space_text"
+                android:text="@string/text_button_1" />
+
+            <Button
+                android:id="@+id/buttonPlanets"
+                style="@style/ButtonSubMenu"
+                android:layout_alignBaseline="@+id/button3"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_alignLeft="@+id/button4"
+                android:text="@string/text_button_2" />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/space_text"
+            style="@style/TextFont"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:layout_marginTop="@dimen/activity_vertical_separation"
+            android:gravity="center"
+            android:text="@string/search_text"
+            android:textColor="#C0C0C0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+                style="@style/ButtonSubMenu"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:layout_marginTop="@dimen/activity_vertical_separation"
+            android:text="@string/text_button_1" />
+
+        <Button
+            android:id="@+id/buttonPlanets"
+            style="@style/ButtonSubMenu"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:layout_marginTop="@dimen/activity_vertical_separation"
+            android:text="@string/text_button_2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/ButtonSubMenu"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:layout_marginTop="@dimen/activity_vertical_separation"
+            android:text="@string/text_button_3" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+
+    </RelativeLayout>
+
+</LinearLayout>

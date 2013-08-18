@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/splashText"
+        style="@style/TextFont"
+        android:gravity="top|center"
+        android:text="@string/WelcomeText"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="196dp"
+        android:layout_height="365dp"
+        android:layout_below="@+id/splashText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/astronaut" />
+
+/
+</RelativeLayout>

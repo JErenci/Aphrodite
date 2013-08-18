@@ -1,0 +1,82 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="text">
+        <item name="android:padding">4dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/fuchsia</item>
+    </style>
+    
+    <style name="layout">
+        <item name="android:background">#C0C0C0</item>
+    </style>
+       
+   
+    <style name="MainFont"  parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/fuchsia</item>
+    </style>
+    
+    <style name="CitationTextFont"  parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>:
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+    
+        <style name="TextFont" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="CitationAuthorFont" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:gravity">right</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="ButtonSubMenu" parent="android:Theme">
+  		<item name="android:buttonStyle">@style/TextFont</item>
+  		<item name="android:layout_width">130dp</item>
+  		<item name="android:layout_height">60dp</item>
+  	</style>
+  	
+    <style name="ButtonMainMenu" parent="android:Theme">
+  		<item name="android:buttonStyle">@style/TextFont</item>
+  		<item name="android:layout_width">wrap_content</item>
+  		<item name="android:layout_height">wrap_content</item>
+  	</style>
+  	
+  	<style name="Theme.Transparent" parent="android:Theme">
+    	<item name="android:windowIsTranslucent">true</item>
+    	<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowNoTitle">true</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:backgroundDimEnabled">false</item>
+  	</style>
+</resources>
